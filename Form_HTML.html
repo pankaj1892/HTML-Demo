@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+</head>
+<body>
+    <form action="./hello.html" validate>
+        <!--
+            FORM 
+                -An  HTML form is used to collect users input
+                - It's is represeted by <form> tag containing diffenrnt types of input element s 
+                - action attribute  helps the to redutect the page to another if submited through the button in the form.
+                -->
+                <style>
+                    #name{
+
+                    }
+
+                </style>
+                <label for="name">Name</label>
+                <!--
+                    Label tag 
+                        -A label tag used to disclose a text in the form, reffering to the input filed 
+                        -"for" key in attibute is mapped with the input elements id name to find the respective filed to it 
+                        -->
+                    <input type="text" id="name" name="name">
+                        <!--
+                            Input tag 
+                                -haveing an iput field to stoer the user's data 
+                                -Defined input is of text type
+                                -Attribites :
+                                    -requied :  Meake the input feiled mandatory 
+                                    -disablse   Neakes the input inatcvie
+                                    -checkes :  meskes the selesct 
+
+
+                                       -types:
+                                            -text(default type) 
+                                            -number 
+                                            -date
+                                            -password 
+                                            -email
+                                            -color 
+                                            -url
+                                            -file
+                                            -time 
+                                            -DateTime
+                                            -Radio
+                                            -Button
+                                                -Submit 
+                                                -Reset
+                                        -->
+
+                                        <label for="num">Phone Number</label>
+                                        <input type="number" id="num" name="number" placeholder="phone Number">
+                                          <br><br>
+
+                                          <label for="mail">Email</label>
+                                             <input type="email" id="mail" name="email" placeholder="Enter Email">
+                                          <br><br>
+                                          
+                                          <label for="date">DAte</label>
+                                        <input type="date" id="date" data-="date">
+
+                                        <br><br>
+
+                                        <label for="pass">Password
+                                        <span style="color: red; font-size: 15px;">*</span>
+                                        </label>
+                                        <input type="password" id="pass" required="" placeholder="password">
+
+                                        <br><br>
+
+
+                                        <label> Gender:</label>
+                                            <input type="radio" name="Gender" id="male" value="Male">
+                                            <label> Male</label>
+                                            <input type="radio" name="Gender" id="female" value="Female">
+                                            <label> Female</label>
+                                            <input type="radio" name="Gender" id="other" value="Other">
+                                            <label> Other</label>                                         
+<br><br>
+
+                                        <label>Language:</label>
+                                            <input type="checkbox" name="Language" id="eng" value="English">
+                                                <label for="">English</label>
+                                            <input type="checkbox" name="Language" id="hindi" value="Hindi" checked>
+                                                 <label for="hindi"  > Hindi</label>
+                                            <input type="checkbox" name="Language" id="mara" value="Marathi">
+                                                 <label for="nara" > Marathi</label>
+
+                                                 <br><br>
+                                        <label for="count">Country:</label>
+                                            <select id="count">
+
+                                                <option value="India">India</option>
+                                                <option value="Austarlia">Australia</option>
+                                                <option value="Nepal">Nepal</option>
+                                                <option value="egypt">Egypt</option>
+                                            </select>
+
+                                            <br><br>
+
+                                            <input type="file" multiple>
+                                            <input type="url" placeholder="Enter the url">
+                                      
+                                            <br><br>
+
+                                            <button>Submit-btn</button>
+                                            <input type="submit" value="Submit-inp">
+                                            <input type="reset" >
+                                        <label for=""></label>
+                                            </form>
+    
+</body>
+</html>
